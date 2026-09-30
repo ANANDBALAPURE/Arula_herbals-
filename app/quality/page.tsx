@@ -78,7 +78,7 @@ export default function QualityPage() {
           <p className="mt-6 font-body text-base leading-relaxed text-ink/75">
             We know &ldquo;organic&rdquo; and &ldquo;lab tested&rdquo; are
             easy words to print and hard to prove. This page is where we show
-            our work — what we test for, what we're certified against, and
+            our work — what we test for, what we&apos;re certified against, and
             where each powder is actually grown.
           </p>
         </div>
@@ -144,7 +144,7 @@ export default function QualityPage() {
         <div className="container-page">
           <Eyebrow>Farm origin</Eyebrow>
           <h2 className="mt-2 max-w-xl font-display text-3xl leading-tight text-balance md:text-4xl">
-            Grown across India's organic growing belts
+            Grown across India&apos;s organic growing belts
           </h2>
           <div className="mt-10 grid gap-6 sm:grid-cols-2">
             {farmOrigins.map((f) => (

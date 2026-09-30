@@ -48,7 +48,7 @@ export default function AboutPage() {
             </p>
             <p className="mt-4 font-body text-base leading-relaxed text-ink/75">
               Every product on this site is grown, harvested and dried with
-              the same standard — the one we'd want for our own family's
+                the same standard — the one we&apos;d want for our own family&apos;s
               kitchen.
             </p>
           </div>

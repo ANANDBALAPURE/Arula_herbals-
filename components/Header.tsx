@@ -12,14 +12,14 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-forest/10 bg-cream/90 backdrop-blur">
-      <div className="container-page flex h-[4.75rem] items-center justify-between sm:h-20">
+      <div className="container-page flex h-24 items-center justify-between sm:h-28">
         <Link href="/" className="flex items-center" onClick={() => setOpen(false)}>
           <Image
             src="/images/brand/arula-logo.png"
             alt={`${site.name} logo`}
             width={128}
             height={128}
-            className="h-[4.25rem] w-[4.25rem] object-contain sm:h-[5.25rem] sm:w-[5.25rem]"
+            className="h-[5.75rem] w-[5.75rem] object-contain sm:h-[6.75rem] sm:w-[6.75rem]"
             priority
           />
         </Link>

@@ -10,11 +10,11 @@ export function Footer() {
         <div>
           <div className="flex items-center gap-2.5">
             <Image
-              src="/images/brand/logo-mark.png"
+              src="/images/brand/logo-footer.png"
               alt={`${site.name} logo`}
-              width={36}
-              height={31}
-              className="h-8 w-auto brightness-0 invert"
+              width={72}
+              height={72}
+              className="h-auto w-[58px] shrink-0 object-contain sm:w-[72px]"
             />
             <span className="font-display text-xl">{site.name}</span>
           </div>

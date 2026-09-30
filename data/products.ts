@@ -199,6 +199,50 @@ export const products: Product[] = [
       },
     ],
     keywordFocus: "Organic Beetroot Powder India, Natural Beetroot Powder, Arula Herbals Beetroot",
+    heroImage: "/images/beetroot/b7.png",
+    galleryImages: [
+      {
+        src: "/images/beetroot/b7.png",
+        alt: "Arula Herbals Beetroot Powder pouch with beetroot and powder",
+        label: "Product hero",
+      },
+      {
+        src: "/images/beetroot/b3.png",
+        alt: "Creative ways to use Arula Herbals Beetroot Powder",
+        label: "How to use",
+      },
+      {
+        src: "/images/beetroot/b2.png",
+        alt: "Arula Herbals Beetroot Powder benefits and product story",
+        label: "Why beetroot",
+      },
+      {
+        src: "/images/beetroot/b6.png",
+        alt: "Arula Herbals Beetroot Powder farm to pouch process",
+        label: "Farm to pouch",
+      },
+      {
+        src: "/images/beetroot/b8.png",
+        alt: "Arula Herbals Beetroot Powder quality and testing information",
+        label: "Quality",
+      },
+      {
+        src: "/images/beetroot/b1.png",
+        alt: "Arula Herbals Beetroot Powder transparency and back panel information",
+        label: "Transparency",
+      },
+      {
+        src: "/images/beetroot/b4.png",
+        alt: "Arula Herbals Beetroot Powder comparison with regular beetroot powder",
+        label: "Why Arula",
+      },
+      {
+        src: "/images/beetroot/b5.png",
+        alt: "Arula Herbals Beetroot Powder front pouch",
+        label: "Pouch detail",
+      },
+    ],
+    variants: [{ quantity: "100g", mrp: 260, discountPercent: 20, price: 208 }],
   },
   {
     slug: "ashwagandha-powder",
@@ -254,6 +298,40 @@ export const products: Product[] = [
       },
     ],
     keywordFocus: "Organic Ashwagandha Powder India, Ayurvedic Ashwagandha, Arula Herbals Ashwagandha",
+    heroImage: "/images/ashwagandha/A1.png",
+    galleryImages: [
+      {
+        src: "/images/ashwagandha/A1.png",
+        alt: "How to use Arula Herbals Ashwagandha Powder",
+        label: "How to use",
+      },
+      {
+        src: "/images/ashwagandha/A3.png",
+        alt: "Arula Herbals Ashwagandha Powder benefits and product story",
+        label: "Why ashwagandha",
+      },
+      {
+        src: "/images/ashwagandha/A5.png",
+        alt: "Arula Herbals Ashwagandha Powder farm to pouch process",
+        label: "Farm to pouch",
+      },
+      {
+        src: "/images/ashwagandha/A4.png",
+        alt: "Arula Herbals Ashwagandha Powder quality and trust information",
+        label: "Quality",
+      },
+      {
+        src: "/images/ashwagandha/A6.png",
+        alt: "Arula Herbals Ashwagandha Powder transparency and back panel information",
+        label: "Transparency",
+      },
+      {
+        src: "/images/ashwagandha/A2.png",
+        alt: "Arula Herbals Ashwagandha Powder comparison with regular Ashwagandha powder",
+        label: "Why Arula",
+      },
+    ],
+    variants: [{ quantity: "100g", mrp: 260, discountPercent: 20, price: 208 }],
   },
   {
     slug: "amla-powder",

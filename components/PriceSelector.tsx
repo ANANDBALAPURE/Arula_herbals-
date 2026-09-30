@@ -13,10 +13,11 @@ export function PriceSelector({
 }) {
   const [index, setIndex] = useState(0);
   const selected = variants[index];
+  const savings = Math.max(selected.mrp - selected.price, 0);
 
   return (
     <div className="mt-7 rounded-2xl border border-forest/10 bg-white/55 p-5 shadow-sm shadow-forest/5">
-      <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
         <div>
           <label
             htmlFor="quantity-select"
@@ -38,20 +39,29 @@ export function PriceSelector({
           </select>
         </div>
 
-        <div className="flex w-full flex-wrap items-center gap-3 rounded-xl bg-forest px-5 py-4 text-cream shadow-sm shadow-forest/10 sm:w-auto sm:justify-end">
-          <span className="font-display text-[32px] font-semibold leading-none sm:text-[36px] md:text-[40px]">
-            ₹{selected.price}
-          </span>
-          <span className="font-body text-sm text-cream/65 line-through sm:text-base">
-            <span className="sr-only">MRP </span>₹{selected.mrp}
-          </span>
-          <span className="rounded-full bg-cream/15 px-2.5 py-1 font-body text-xs font-bold text-cream">
-            {selected.discountPercent}% off
-          </span>
+        <div className="rounded-xl bg-forest px-4 py-3 text-cream shadow-sm shadow-forest/10 sm:min-w-[12rem]">
+          <p className="font-body text-xs font-semibold uppercase tracking-[0.16em] text-cream/75">
+            Festive Sale
+          </p>
+          <p className="mt-1 font-body text-sm font-bold uppercase tracking-[0.12em]">
+            {selected.discountPercent}% OFF
+          </p>
         </div>
       </div>
 
-      <p className="mt-2 font-body text-xs text-ink/50">
+      <div className="mt-6 flex flex-wrap items-baseline gap-x-3 gap-y-1">
+        <span className="font-display text-[32px] font-semibold leading-none text-forest sm:text-[38px] md:text-[40px]">
+          ₹{selected.price}
+        </span>
+        <span className="font-body text-sm text-ink/50 line-through sm:text-base">
+          <span className="sr-only">MRP </span>₹{selected.mrp}
+        </span>
+        <span className="basis-full font-body text-sm font-medium text-clay">
+          You Save ₹{savings}
+        </span>
+      </div>
+
+      <p className="mt-3 font-body text-xs text-ink/50">
         MRP inclusive of all taxes. Final price for {selected.quantity} shown above.
       </p>
 

@@ -4,7 +4,6 @@ import { CTAButtons } from "@/components/CTAButtons";
 import { ProductCard, SectionHeading, Eyebrow } from "@/components/Sections";
 import { RootMotif, DropletBadge } from "@/components/Botanical";
 import { products } from "@/data/products";
-import { site } from "@/data/site";
 
 const benefits = [
   {
@@ -66,13 +65,12 @@ const recipeGuide = [
 export default function HomePage() {
   return (
     <>
-      <AnnouncementTicker />
       {/* Hero */}
       <section className="relative isolate overflow-hidden bg-cream">
         <div className="absolute inset-0 bg-cream">
           <div className="absolute inset-0 sm:left-auto sm:right-0 sm:w-[82%] md:w-[78%] lg:w-[76%] xl:w-[74%]">
             <Image
-              src="/images/home/all-products.png"
+              src="/images/home/hero-background.png"
               alt="Arula Herbals powders displayed on a stone table in a forest"
               fill
               priority
@@ -299,23 +297,6 @@ export default function HomePage() {
         </div>
       </section>
     </>
-  );
-}
-
-function AnnouncementTicker() {
-  if (!site.promotion.active) return null;
-
-  const offer = `${site.promotion.discountPercent}% OFF ON ALL PRODUCTS`;
-  const message = `${offer} / LIMITED TIME OFFER / SHOP NOW / ${offer}`;
-
-  return (
-    <div className="overflow-hidden bg-forest py-2 text-cream" aria-label={message}>
-      <div className="marquee-track flex w-max items-center gap-8 whitespace-nowrap font-body text-xs font-bold uppercase tracking-[0.22em] sm:text-sm">
-        {Array.from({ length: 4 }).map((_, index) => (
-          <span key={index}>{message}</span>
-        ))}
-      </div>
-    </div>
   );
 }
 

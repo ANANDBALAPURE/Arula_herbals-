@@ -7,7 +7,7 @@ export default function NotFound() {
       <LeafSprig className="h-16 w-16 text-sage" />
       <h1 className="font-display text-3xl text-forest">This page wandered off the path.</h1>
       <p className="max-w-sm font-body text-sm text-ink/70">
-        The page you're looking for doesn't exist. Let's get you back to
+        The page you&apos;re looking for doesn&apos;t exist. Let&apos;s get you back to
         something rooted.
       </p>
       <Link

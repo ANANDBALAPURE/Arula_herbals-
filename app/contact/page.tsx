@@ -36,7 +36,7 @@ export default function ContactPage() {
           </h1>
           <p className="mt-6 max-w-lg font-body text-base leading-relaxed text-ink/75">
             We keep things simple: reach us on WhatsApp for the fastest
-            response, or drop us an email. We're happy to send product
+            response, or drop us an email. We&apos;re happy to send product
             photos, current offers and delivery timelines directly.
           </p>
 

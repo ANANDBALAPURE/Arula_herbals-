@@ -53,8 +53,8 @@ export function ProductGallery({ product }: { product: Product }) {
   useEffect(() => {
     if (images.length < 2 || isHovered) return;
 
-    const timer = window.setInterval(showNext, 4000);
-    return () => window.clearInterval(timer);
+    const timer = window.setTimeout(showNext, 4000);
+    return () => window.clearTimeout(timer);
   }, [autoplayReset, images.length, isHovered, showNext]);
 
   useEffect(() => {

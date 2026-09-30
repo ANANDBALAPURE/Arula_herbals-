@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
+import { AnnouncementBar } from "@/components/AnnouncementBar";
 import { site } from "@/data/site";
 
 const fraunces = Fraunces({
@@ -62,6 +63,7 @@ export default function RootLayout({
         >
           Skip to content
         </a>
+        <AnnouncementBar />
         <Header />
         <main id="main-content">{children}</main>
         <Footer />
