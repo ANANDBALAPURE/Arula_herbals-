@@ -139,8 +139,8 @@ export const products: Product[] = [
       },
     ],    variants: [
       { quantity: "100g", mrp: 260, discountPercent: 20, price: 208 },
-      { quantity: "200g", mrp: 520, discountPercent: 22, price: 405 },
-      { quantity: "500g", mrp: 1300, discountPercent: 26, price: 962 },
+      { quantity: "200g", mrp: 520, discountPercent: 24, price: 395 },
+      { quantity: "500g", mrp: 1300, discountPercent: 30, price: 919 },
     ],
   },
   {
@@ -242,7 +242,11 @@ export const products: Product[] = [
         label: "Pouch detail",
       },
     ],
-    variants: [{ quantity: "100g", mrp: 260, discountPercent: 20, price: 208 }],
+    variants: [
+      { quantity: "100g", mrp: 250, discountPercent: 20, price: 199 },
+      { quantity: "200g", mrp: 500, discountPercent: 24, price: 380 },
+      { quantity: "500g", mrp: 1250, discountPercent: 30, price: 875 },
+    ],
   },
   {
     slug: "ashwagandha-powder",
@@ -298,40 +302,49 @@ export const products: Product[] = [
       },
     ],
     keywordFocus: "Organic Ashwagandha Powder India, Ayurvedic Ashwagandha, Arula Herbals Ashwagandha",
-    heroImage: "/images/ashwagandha/A1.png",
+    heroImage: "/images/ashwagandha/gallery/01.png",
     galleryImages: [
       {
-        src: "/images/ashwagandha/A1.png",
-        alt: "How to use Arula Herbals Ashwagandha Powder",
-        label: "How to use",
+        src: "/images/ashwagandha/gallery/01.png",
+        alt: "Arula Herbals Ashwagandha Powder pouch with ashwagandha roots and powder",
+        label: "Product hero",
       },
       {
-        src: "/images/ashwagandha/A3.png",
-        alt: "Arula Herbals Ashwagandha Powder benefits and product story",
-        label: "Why ashwagandha",
-      },
-      {
-        src: "/images/ashwagandha/A5.png",
-        alt: "Arula Herbals Ashwagandha Powder farm to pouch process",
-        label: "Farm to pouch",
-      },
-      {
-        src: "/images/ashwagandha/A4.png",
-        alt: "Arula Herbals Ashwagandha Powder quality and trust information",
+        src: "/images/ashwagandha/gallery/02.png",
+        alt: "Arula Herbals Ashwagandha Powder quality and purity information",
         label: "Quality",
       },
       {
-        src: "/images/ashwagandha/A6.png",
-        alt: "Arula Herbals Ashwagandha Powder transparency and back panel information",
+        src: "/images/ashwagandha/gallery/03.png",
+        alt: "Arula Herbals Ashwagandha Powder packaging transparency and nutrition facts",
         label: "Transparency",
       },
       {
-        src: "/images/ashwagandha/A2.png",
+        src: "/images/ashwagandha/gallery/04.png",
+        alt: "Why choose Arula Herbals Ashwagandha Powder benefits and nutrition information",
+        label: "Benefits",
+      },
+      {
+        src: "/images/ashwagandha/gallery/05.png",
+        alt: "How to use Arula Herbals Ashwagandha Powder in drinks and recipes",
+        label: "How to use",
+      },
+      {
+        src: "/images/ashwagandha/gallery/06.png",
+        alt: "Arula Herbals Ashwagandha Powder root to pouch processing journey",
+        label: "Root to pouch",
+      },
+      {
+        src: "/images/ashwagandha/gallery/07.png",
         alt: "Arula Herbals Ashwagandha Powder comparison with regular Ashwagandha powder",
         label: "Why Arula",
       },
     ],
-    variants: [{ quantity: "100g", mrp: 260, discountPercent: 20, price: 208 }],
+    variants: [
+      { quantity: "100g", mrp: 220, discountPercent: 20, price: 176 },
+      { quantity: "200g", mrp: 440, discountPercent: 24, price: 334 },
+      { quantity: "500g", mrp: 1100, discountPercent: 30, price: 769 },
+    ],
   },
   {
     slug: "amla-powder",
@@ -384,6 +397,11 @@ export const products: Product[] = [
       },
     ],
     keywordFocus: "Organic Amla Powder India, Indian Gooseberry Powder, Arula Herbals Amla",
+    variants: [
+      { quantity: "100g", mrp: 230, discountPercent: 20, price: 184 },
+      { quantity: "200g", mrp: 430, discountPercent: 24, price: 349 },
+      { quantity: "500g", mrp: 1150, discountPercent: 30, price: 804 },
+    ],
   },
   {
     slug: "wheatgrass-powder",
@@ -437,6 +455,11 @@ export const products: Product[] = [
       },
     ],
     keywordFocus: "Organic Wheatgrass Powder India, Raw Wheatgrass Powder, Arula Herbals Wheatgrass",
+    variants: [
+      { quantity: "100g", mrp: 390, discountPercent: 20, price: 311 },
+      { quantity: "200g", mrp: 780, discountPercent: 24, price: 593 },
+      { quantity: "500g", mrp: 1950, discountPercent: 30, price: 1365 },
+    ],
   },
   {
     slug: "raw-banana-powder",
@@ -490,6 +513,49 @@ export const products: Product[] = [
       },
     ],
     keywordFocus: "Raw Banana Powder India, Organic Green Banana Flour, Arula Herbals Banana Powder",
+    variants: [
+      { quantity: "100g", mrp: 200, discountPercent: 20, price: 159 },
+      { quantity: "200g", mrp: 400, discountPercent: 24, price: 304 },
+      { quantity: "500g", mrp: 1000, discountPercent: 30, price: 699 },
+    ],
+    heroImage: "/images/banana/gallery/01.png",
+    galleryImages: [
+      {
+        src: "/images/banana/gallery/01.png",
+        alt: "Arula Herbals Raw Banana Powder pouch with banana and powder",
+        label: "Product hero",
+      },
+      {
+        src: "/images/banana/gallery/02.png",
+        alt: "Arula Herbals Raw Banana Powder quality and purity information",
+        label: "Quality",
+      },
+      {
+        src: "/images/banana/gallery/03.png",
+        alt: "Arula Herbals Raw Banana Powder benefits and nutrition information",
+        label: "Benefits",
+      },
+      {
+        src: "/images/banana/gallery/04.png",
+        alt: "Arula Herbals Raw Banana Powder packaging transparency and nutrition facts",
+        label: "Transparency",
+      },
+      {
+        src: "/images/banana/gallery/05.png",
+        alt: "Raw banana powder farm to pouch process",
+        label: "Farm to pouch",
+      },
+      {
+        src: "/images/banana/gallery/07.png",
+        alt: "How to use Arula Herbals Raw Banana Powder in drinks and recipes",
+        label: "How to use",
+      },
+      {
+        src: "/images/banana/gallery/08.png",
+        alt: "Arula Herbals Raw Banana Powder comparison with regular banana powder",
+        label: "Why Arula",
+      },
+    ],
   },
 ];
 

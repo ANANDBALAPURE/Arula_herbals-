@@ -4,6 +4,8 @@ import { useState } from "react";
 import type { PriceVariant } from "@/data/products";
 import { CTAButtons } from "./CTAButtons";
 
+const formatPrice = (value: number) => new Intl.NumberFormat("en-IN").format(value);
+
 export function PriceSelector({
   productName,
   variants,
@@ -51,13 +53,13 @@ export function PriceSelector({
 
       <div className="mt-6 flex flex-wrap items-baseline gap-x-3 gap-y-1">
         <span className="font-display text-[32px] font-semibold leading-none text-forest sm:text-[38px] md:text-[40px]">
-          ₹{selected.price}
+          ₹{formatPrice(selected.price)}
         </span>
         <span className="font-body text-sm text-ink/50 line-through sm:text-base">
-          <span className="sr-only">MRP </span>₹{selected.mrp}
+          <span className="sr-only">MRP </span>₹{formatPrice(selected.mrp)}
         </span>
         <span className="basis-full font-body text-sm font-medium text-clay">
-          You Save ₹{savings}
+          You Save ₹{formatPrice(savings)}
         </span>
       </div>
 
@@ -66,7 +68,7 @@ export function PriceSelector({
       </p>
 
       <div className="mt-6">
-        <CTAButtons productName={productName} variantLabel={`${selected.quantity} — ₹${selected.price}`} />
+        <CTAButtons productName={productName} variantLabel={`${selected.quantity} — ₹${formatPrice(selected.price)}`} />
       </div>
     </div>
   );
